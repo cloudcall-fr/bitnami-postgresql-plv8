@@ -13,6 +13,8 @@ RUN apt-get update && \
   make install && \
   ldconfig && \
   # Clean up
+  apt-get -yq remove build-essential libtool autoconf unzip wget git python python3 && \
+  apt-get autoremove -y && \
   apt-get autoclean && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
