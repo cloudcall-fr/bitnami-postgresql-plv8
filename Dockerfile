@@ -16,4 +16,4 @@ RUN apt-get update && \
   apt-get autoclean && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-  rm  ~/v3.0.0.tar.gz ~/plv8-3.0.0
+  rm  -rf ~/v3.0.0.tar.gz ~/plv8-3.0.0
